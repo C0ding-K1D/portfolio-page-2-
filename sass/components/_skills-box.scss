@@ -1,0 +1,17 @@
+.skills-box{
+    background-color: rgba($color-light-grey,.8);
+    padding:2.5rem;
+    text-align:center;
+    box-shadow: 0 1.5rem 4rem rgbs(0,0,0,.15);
+    transition:all .3s;
+}
+
+.skills-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+.skills-box-icon{
+    font-size:15rem;
+    color: rgba($color-primary-light,.5);
+}
+

@@ -1,0 +1,96 @@
+@import "abstract/function";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/utilities";
+@import "base/typography";
+
+@import "pages/home";
+
+@import "components/btn";
+@import "components/composition";
+@import "components/skills-box";
+@import "components/card";
+@import "components/contact";
+@import "components/bg-video";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+
+
+.container{
+    max-width:114rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    
+}
+
+.custom-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+    row-gap:2rem;
+
+}
+
+.skills-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8rem;
+    row-gap:2rem;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+        row-gap:4rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        row-gap:3rem;
+    }
+
+}
+
+.portfolio-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8rem;
+    row-gap:2rem;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        padding:0 12rem;
+        row-gap:9rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 1fr ;
+        padding:0 12rem;
+        row-gap:7rem;
+    }
+}
+
+.text-box{
+    grid-column: 1;
+    
+}
+
+.image-box{
+    grid-column: 2;
+    
+}
+
+
+
+
+
+
+
+
+

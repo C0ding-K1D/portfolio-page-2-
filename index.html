@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="starter/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <input class="navigation-checkbox" type="checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation-button">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+
+        <nav class="navigation-nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="" class="navigation_link"> my resume</a></li>
+                <li class="navigation_item"><a href="#section-about" class="navigation_link" onclick="toggleCheckbox()"> about matthew</a></li>
+                <li class="navigation_item"><a href="#section-features" class="navigation_link" onclick="toggleCheckbox()"> what i know</a></li>
+                <li class="navigation_item"><a href="#section-portfolio" class="navigation_link" onclick="toggleCheckbox()"> portfolio</a></li>
+                <li class="navigation_item"><a href="#section-contact" class="navigation_link" onclick="toggleCheckbox()">get in touch</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header__text--box">
+            <h1 class="heading-primary">
+                <span class="heading__primary--main">I'm Matthew</span>
+                <span class="heading__primary--sub">a frontend developer</span>
+            </h1>
+            <a href="/Matthew_Alvarez_Resume 3.html" class="btn btn--white btn--animated">download cv</a>
+        </div>
+    </header>
+    <main>
+        <section class="section-about" id="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    hey
+                </h2>
+            </div>
+            <div class="container custom-grid">
+                <div class="text-box">
+                    <h3 class="heading-tertiary u-margin-bottom-small">I'm matthew,  A Front End Developer. </h3>
+                    <p class="paragraph">Proficient in HTML, CSS, JavaScript plus modern libraries and frameworks. I am passionate about design and functionality  with experience building and maintaining responsive websites.</p>
+                
+                </div>
+                <div class="image-box">
+                    <div class="composition">
+                        <img src="./picture1-large.jpg" alt="photo 1" class="composition__photo composition__photo--1">
+                        <img src="./picture3-large.jpg" alt="Photo 2" class="composition__photo composition__photo--2">
+                        <img src="./picture2-large.jpg" alt="Photo 3" class="composition__photo composition__photo--3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-features" id="section-features">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary-skills">
+                    What i know
+                </h2>
+                <h3 class="heading-tertiary-skills ">front end </h3>
+            </div>
+            <div class="container skills-grid">
+                <div class="skills-box">
+                    <ion-icon class="skills-box-icon" name="logo-html5"></ion-icon>
+                </div>
+               
+                <div class="skills-box">
+                    <ion-icon class="skills-box-icon"  name="logo-css3"></ion-icon>
+                </div>
+                <div class="skills-box">
+                    <ion-icon class="skills-box-icon"  name="logo-javascript"></ion-icon>
+                </div>
+                <div class="skills-box">
+                    <ion-icon class="skills-box-icon" name="logo-react"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="section-portfolio" id="section-portfolio">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                    portfolio
+                </h2>
+            </div>
+            <div class="container portfolio-grid">
+                <div class="portfolio-project">
+                    <div class="portfolio-project-side portfolio-project-side-front">
+                        <div class="card-picture card-picture-1">
+                            &nbsp;
+                        </div>
+                        <div class="card-heading">
+                            <h4>
+                                <span class="card-heading-span card-heading-span-1">
+                                    emovji: text converter
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Open ai API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-project-side portfolio-project-side-back portfolio-project-side-back-1">
+                        <div class="card-cta">
+                            <div class="card-cta-box">
+                                <p class="card-cta-box-text card-cta-box-text-1">Convert your movie titles</p>
+                            </div>
+                            <a href="https://emovji-convert-movie-title-app.netlify.app" class="btn-portfolio btn--maroon">Get emojis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-project"> 
+                    <div class="portfolio-project-side portfolio-project-side-front">
+                        <div class="card-picture card-picture-2">
+                            &nbsp;
+                        </div>
+                        <div class="card-heading">
+                            <h4>
+                                <span class="card-heading-span card-heading-span-2">
+                                    forkify: recipe app
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Recipe API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-project-side portfolio-project-side-back portfolio-project-side-back-2">
+                        <div class="card-cta">
+                            <div class="card-cta-box">
+                                <p class="card-cta-box-text card-cta-box-text-2">Find your perfect recipe</p>
+                            </div>
+                            <a href="https://forkifytherecipeapp.netlify.app" class="btn-portfolio btn--rose">Get cooking</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-project">
+                    <div class="portfolio-project-side portfolio-project-side-front">
+                        <div class="card-picture card-picture-3">
+                            &nbsp;
+                        </div>
+                        <div class="card-heading">
+                            <h4>
+                                <span class="card-heading-span card-heading-span-3">
+                                rok investigations
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>J-Query</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-project-side portfolio-project-side-back portfolio-project-side-back-3">
+                        <div class="card-cta">
+                            <div class="card-cta-box">
+                                <p class="card-cta-box-text card-cta-box-text-3">Start Investigating</p>
+                            </div>
+                            <a href="https://c0ding-k1d.github.io/Rok/index.html" class="btn-portfolio btn--yellow">Get digging</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact" id="section-contact">
+                <div class="bg-video">
+                    <video class="bg-video-content" autoplay muted loop>
+                        <source src="/Code_flythough_loop_01_Videvo.mp4" type="video/mp4">
+                        <source src="/Code_flythough_loop_01_Videvo.webm" type="video/webm">
+                        Your browser is not supported!
+                    </video>
+            </div>
+            <div class="container">
+                    <div class="u-center-text u-margin-bottom-small">
+                        <h2 class="heading-secondary-contact u-margin-bottom-big">Get in touch</h2>
+                        <h3 class="heading-tertiary-contact ">i'm looking for work </h3>
+                    </div>
+                    <div class="contact-form">
+                        <div class="contact-form-text form-cta">
+                            <div class="cta-text-box">
+                                <div>
+                                    <label for="full-name">Full Name</label>
+                                    <input id="full-name" type="text" placeholder="John Smith" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email address</label>
+                                    <input id="email" type="email" placeholder="me@example.com" required>
+                                </div>
+                                <div>
+                                    <label for="form-text-area">How can I help?</label>
+                                    <textarea name="form-text-area" id="" cols="30" rows="10"></textarea>
+                                    <button class="btn btn--form">Message me</button>
+                                </div>
+                            </div>
+                            <div class="cta-image-box">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo-box">
+            <a href="https://github.com/C0ding-K1D"><ion-icon class="footer-icon" name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/matthew-alvarez-778b3a22b"><ion-icon class="footer-icon" name="logo-linkedin""></ion-icon></a>
+            <a href="https://twitter.com/c0ding_k1d"><ion-icon class="footer-icon" name="logo-twitter"></ion-icon></a>
+        </div>
+        <container class="custom-grid">
+            <div class="footer-nav">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="" class="footer-link">Home</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">about</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">skills</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">portfolio</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright-text">
+                    Created by Matthew Alvarez.  Copyright &copy; <span class="year"></span>
+                </p>
+            </div>
+        </container>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

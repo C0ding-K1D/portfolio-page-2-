@@ -1,0 +1,150 @@
+.portfolio-project {
+    // background-color:orangered;
+    height:50rem;
+    perspective:150rem;
+    -moz-perspective: 150rem;
+    position:relative;
+}
+
+.portfolio-project-side {
+    height:50rem;
+    font-size:3rem;
+    transition:all .8s ease;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    overflow:hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+}
+
+.portfolio-project-side-front {
+    background-color:#fff;
+}
+
+.portfolio-project-side-back{
+    transform:rotateY(180deg);
+}
+
+.portfolio-project-side-back-1{
+    background-image:linear-gradient(to right bottom,#795ec8, #5b4696);
+}
+
+.portfolio-project-side-back-2{
+    background-image:linear-gradient(to right bottom,#795ec8, #5b4696);
+}
+
+.portfolio-project-side-back-3{
+    background-image: linear-gradient(to right bottom,#795ec8, #5b4696);
+}
+
+.portfolio-project:hover .portfolio-project-side-front {
+    transform:rotateY(-180deg);
+}
+
+.portfolio-project:hover .portfolio-project-side-back {
+    transform:rotateY(0deg);
+}
+
+.card-picture{
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+    background-blend-mode:color;
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card-picture-1{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark), url(/emovji.jpg);
+    height: 23rem;
+}
+
+.card-picture-2{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark), url(/forkify.jpg);
+    height: 23rem;
+}
+.card-picture-3{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark), url(/rok.jpg);
+    height: 23rem;
+}
+
+.card-heading {
+    font-size: 2.8rem;
+    font-weight:lighter;
+    text-transform:uppercase;
+    color:#fff;
+    position:absolute;
+    top:16rem;
+    right:2rem;
+    text-align:right;
+    width:75%;
+}
+
+.card-heading-span{
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break:clone;
+    box-decoration-break:clone;
+}
+.card-heading-span-1{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark);
+}
+
+.card-heading-span-2{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark);
+}
+
+.card-heading-span-3{
+    background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark);
+}
+
+.card-details{
+    padding:3rem;
+}
+.card-details ul{
+    list-style: none;
+    width:80%;
+    margin:0 auto;
+}
+
+.card-details ul li{
+    text-align:center;
+    font-size:1.5rem;
+    padding:1rem;
+}
+
+.card-details ul li:not(:last-child){
+    border-bottom: .1rem solid #eee;
+}
+
+//backside styling
+
+.card-cta{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    text-align: center;
+}
+
+.card-cta-box-text{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight:300;
+    margin-bottom:2.4rem;
+}
+
+.card-cta-box-text-1{
+    color:$shade-primary-light;
+}
+
+.card-cta-box-text-2{
+    color:$shade-primary-light;
+}
+
+.card-cta-box-text-3{
+    color:$shade-primary-light;
+}

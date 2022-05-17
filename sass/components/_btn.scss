@@ -1,0 +1,121 @@
+.btn-portfolio:link, .btn-portfolio:visited {
+    text-transform:uppercase;
+    text-decoration:none;
+    display:inline-block;
+    font-size:2.4rem;
+    padding:1rem 2rem;
+    border-radius:10rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn-portfolio:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 1rem 2.5rem #f5f1ff33;
+}
+
+.btn-portfolio:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity:0;
+}
+
+.btn-portfolio:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1.25rem #f5f1ff33;
+}
+    
+.btn-portfolio::after{
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:100%;
+    border-radius:10rem;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+    transition: all .4s;
+}
+
+.btn:link, .btn:visited {
+    text-transform:uppercase;
+    text-decoration:none;
+    display:inline-block;
+    padding:1.5rem 4rem;
+    border-radius:10rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 1rem 2.5rem #f5f1ff33;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity:0;
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1.25rem #f5f1ff33;
+}
+    
+.btn::after{
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:100%;
+    border-radius:10rem;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: all .4s;
+}
+    
+.btn--white {
+    background-color:$shade-primary-light;
+    color:$shade-primary-dark;
+            
+}
+    
+.btn--white::after {
+    background-color:$shade-primary-light;
+}
+
+.btn--yellow {
+    background-color:$shade-primary-light;
+    color:$shade-primary-dark;
+            
+}
+    
+.btn--yellow::after {
+    background-color:$shade-primary-light;
+}
+
+.btn--rose {
+    background-color:$shade-primary-light;
+    color:$shade-primary-dark;
+            
+}
+    
+.btn--rose::after {
+    background-color:$shade-primary-light;
+}
+
+.btn--maroon {
+    background-color:$shade-primary-light;
+    color:$shade-primary-dark;
+            
+}
+    
+.btn--maroon::after {
+    background-color:$shade-primary-light;
+}
+
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
