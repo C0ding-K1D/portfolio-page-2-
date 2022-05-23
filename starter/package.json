@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel starter/index.html",
+    "build": "parcel build starter/index.html  --dist-dir ./dist",
+    "compile:sass": "node-sass sass/main.scss starter/style.css -w"
+  },
+  "author": "Matthew Alvarez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "parcel": "^2.5.0"
+  }
+}
