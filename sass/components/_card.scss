@@ -4,6 +4,13 @@
     perspective:150rem;
     -moz-perspective: 150rem;
     position:relative;
+
+    @include respond(tab-land) {
+        height:auto;
+        border-radius: .3rem;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    }
 }
 
 .portfolio-project-side {
@@ -18,6 +25,12 @@
     border-radius: .3rem;
     overflow:hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+
+    @include respond(tab-land) {
+        height:auto;
+        position:relative;
+        box-shadow: none;
+    }
 }
 
 .portfolio-project-side-front {
@@ -26,6 +39,11 @@
 
 .portfolio-project-side-back{
     transform:rotateY(180deg);
+
+    @include respond(tab-land) {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
 .portfolio-project-side-back-1{
@@ -42,6 +60,10 @@
 
 .portfolio-project:hover .portfolio-project-side-front {
     transform:rotateY(-180deg);
+
+    @include respond(tab-land) {
+        transform:rotateY(0deg);
+    }
 }
 
 .portfolio-project:hover .portfolio-project-side-back {
@@ -128,6 +150,15 @@
     transform: translate(-50%, -50%);
     width:90%;
     text-align: center;
+
+    @include respond(tab-land) {
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        transform:translate(0);
+        padding:7rem 4rem 4rem 4rem;
+    }
 }
 
 .card-cta-box-text{
@@ -135,6 +166,11 @@
     font-size: 3.8rem;
     font-weight:300;
     margin-bottom:2.4rem;
+
+    @include respond(tab-land) {
+        font-size:2.4rem;
+        margin-top:3rem;
+    }
 }
 
 .card-cta-box-text-1{

@@ -7,6 +7,10 @@
     border-radius:10rem;
     transition: all .2s;
     position: relative;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }
 
 .btn-portfolio:hover{
@@ -89,6 +93,9 @@
     background-color:$shade-primary-light;
     color:$shade-primary-dark;
             
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+    }
 }
     
 .btn--yellow::after {

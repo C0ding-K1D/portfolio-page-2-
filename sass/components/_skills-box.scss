@@ -4,6 +4,11 @@
     text-align:center;
     box-shadow: 0 1.5rem 4rem rgbs(0,0,0,.15);
     transition:all .3s;
+
+    @include respond(phone) {
+        width:50%;
+        margin: 0 auto;
+    }
 }
 
 .skills-box:hover {
@@ -13,5 +18,9 @@
 .skills-box-icon{
     font-size:15rem;
     color: rgba($color-primary-light,.5);
+
+    @include respond(tab-land) {
+        font-size:10rem;
+    }
 }
 
