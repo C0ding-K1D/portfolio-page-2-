@@ -203,7 +203,7 @@
                     </div>
                     <div class="contact-form">
                         <div class="contact-form-text form-cta">
-                            <div class="cta-text-box">
+                            <form onsubmit="sendEmail(); reset(); return false;" class="cta-text-box">
                                 <div>
                                     <label for="full-name">Full Name</label>
                                     <input id="full-name" type="text" placeholder="John Smith" required>
@@ -214,10 +214,10 @@
                                 </div>
                                 <div>
                                     <label for="form-text-area">How can I help?</label>
-                                    <textarea name="form-text-area" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="form-text-area" id="text-area" cols="30" rows="10"></textarea>
                                     <button class="btn btn--form">Message me</button>
                                 </div>
-                            </div>
+                            </form>
                             <div class="cta-image-box">
 
                             </div>
@@ -250,5 +250,6 @@
         </container>
     </footer>
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

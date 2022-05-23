@@ -12,29 +12,17 @@ function toggleCheckbox() {
     checkbox.checked = !checkbox.checked;
 };
 
-// (function(){
-        
-//     function apply_viewport(){
-//         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
-    
-//             let ww = window.screen.width;
-//             let mw = 540; // min width of site
-//             let ratio =  ww / mw; //calculate ratio
-//             let viewport_meta_tag = document.getElementById('viewport');
-//             if( ww < mw){ //smaller than minimum size
-//             viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
-//             }
-//             else { //regular size
-//             viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
-//             }
-//         }
-//     }
-    
-//         //ok, i need to update viewport scale if screen dimentions changed
-//         window.addEventListener('resize', function(){
-//         apply_viewport();
-//         });
-    
-//         apply_viewport();
-    
-//     }());
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "mattalvarez354@yahoo.com",
+        Password : "6EB614A8F6B5CBBD0B08F865CECCF66BC311",
+        To : 'mattalvarez354@yahoo.com',
+        From : document.getElementById("email").value,
+        Subject : "New contact form inquiry",
+        Body : document.getElementById("text-area").value
+    }).then(
+        message => alert("Your message was sent successfully")
+    );
+}
